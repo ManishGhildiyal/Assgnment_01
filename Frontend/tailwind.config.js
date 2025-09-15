@@ -28,6 +28,9 @@ module.exports = {
           900: '#111827',
         }
       },
+      textColor: {
+        DEFAULT: '#000000', 
+      },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.3s ease-out',
