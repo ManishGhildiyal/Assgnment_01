@@ -31,6 +31,9 @@ module.exports = {
       textColor: {
         DEFAULT: '#000000', 
       },
+      placeholderColor: {
+        DEFAULT: '#6b7280', 
+    }
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.3s ease-out',
