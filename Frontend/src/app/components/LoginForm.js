@@ -98,16 +98,28 @@ const LoginForm = () => {
                 Password
               </label>
               <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
+                id="title"
+                name="title"
+                type="text"
                 required
                 className="input-field"
-                placeholder="Enter your password"
-                value={formData.password}
+                placeholder="Enter note title"
+                value={formData.title}
                 onChange={handleChange}
+                disabled={loading}
               />
+              
+              <textarea
+                id="content"
+                name="content"
+                rows={6}
+                className="input-field resize-none"
+                placeholder="Write your note content here..."
+                value={formData.content}
+                onChange={handleChange}
+                disabled={loading}
+              />
+
             </div>
 
             <button
