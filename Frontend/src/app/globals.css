@@ -3,15 +3,7 @@
 @tailwind utilities;
 
 
-input, textarea, select {
-  color: #000 !important;
-  background-color: #fff !important;
-}
 
-input::placeholder,
-textarea::placeholder {
-  color: #6b7280 !important; 
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -50,9 +42,12 @@ body {
     @apply bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors duration-200;
   }
   
-  .input-field {
-    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200;
-  }
+ .input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg 
+         focus:outline-none focus:ring-2 focus:ring-primary-500
+         text-black placeholder-gray-500 bg-white;
+}
+
 
   .card {
     @apply bg-white rounded-lg shadow-md border border-gray-200 p-6;
